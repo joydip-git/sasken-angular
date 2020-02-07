@@ -1,0 +1,20 @@
+{
+    "name": "payroll-app-es6",
+    "main": "source/main.js",
+    "author": {
+        "name": "joydip"
+    },
+    "license": "ISC",
+    "description": "this is an application to demonstrate ES6 features",
+    "keywords": [
+        "es6",
+        "class"
+    ],
+    "repository": {},
+    "devDependencies": {
+        "es6-module-transpiler": "^0.10.0"
+    },
+    "scripts": {
+        "transpile": "compile-modules convert -I source employee.js developer.js hr.js main.js -o out employee.js developer.js hr.js main.js  --format commonjs"
+    }
+}
