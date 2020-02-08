@@ -1,0 +1,60 @@
+Module
+Module Formatter: CommonJS, SystemJS, AMD (Asynchronous Module Definition), ES6....
+Module Loader: 
+
+Transpiler
+
+http://schemastore.org/json/
+nodejs.org
+
+global path:
+C:\Users\joydip\AppData\Roaming\npm
+
+c:\program files\nodejs -- environment variables
+
+> npm i/install es6-module-transpiler -g/--save
+
+compile-modules convert -I source employee.js developer.js hr.js main.js -o out employee.js developer.js hr.js main.js  --format commonjs
+
+https://github.com/joydip-git/sasken-angular
+
+npm i typescript --save-dev
+
+npm init --> for package.json 
+
+npm install lite-server --save-dev
+
+npm i requirejs --save
+
+npm i ts-loader --save
+
+npm i webpack webpack-dev-server --save-dev
+npm i @types/webpack @types/webpack-dev-server --save-dev
+npm i webpack-cli --save-dev
+
+const path = require('path');
+module.exports = {
+    entry:'./source/main.ts',
+    output:{
+        filename:'./bundle.js'
+    },
+    module:{
+        rules:[{
+            exclude:[
+                path.resolve(__dirname,'node_modules'),
+                path.resolve(__dirname,'bower_components')
+            ],
+            loader:'ts-loader'
+        }]
+    },
+    resolve:{
+       extensions:['.ts','.json','.js','.css','.tsx','.jsx'] 
+    },
+    devtool:'source-map',
+    devServer:{
+        contentBase:path.join(__dirname,'./'),
+        compress:true,
+        port:9000
+    }
+}   
+
