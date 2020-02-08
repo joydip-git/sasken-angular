@@ -1,0 +1,19 @@
+{
+  "name": "product-app",
+  "version": "1.0.0",
+  "description": "practice application",
+  "main": "out/index.js",
+  "scripts": {
+    "transpile:w": "tsc -w",
+    "load": "lite-server",
+    "run-parallel": "concurrently \"npm run transpile:w\" \"npm run load\" "
+  },
+  "author": "joydip",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "lite-server": "^2.5.4",
+    "requirejs": "^2.3.6",
+    "typescript": "^3.7.5"
+  }
+}

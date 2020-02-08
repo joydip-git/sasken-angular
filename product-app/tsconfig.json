@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "module": "AMD",
+        "target": "ES5",
+        "rootDir": "source",
+        "outDir": "dist"
+    }
+}
