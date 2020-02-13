@@ -1,0 +1,16 @@
+<form ngForm #frm="ngForm" (ngSubmit)="submitData(frm.value)">
+    <div>
+        <label for="name">Name: &nbsp;</label>
+        <input type="text" name="name" id="name" ngModel>
+    </div>
+    <div>
+        <label for="id">Id: &nbsp;</label>
+        <input type="text" name="id" id="id" ngModel>
+    </div>
+    <div>
+        <label for="salary">Salary: &nbsp;</label>
+        <input type="text" name="salary" id="salary" ngModel>
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+</form>
