@@ -1,0 +1,34 @@
+<!-- <p style="width: 100px;">
+<p [style.width.px]="pWidth">
+  {{ message }}
+</p>
+Enter Data: &nbsp;&nbsp;<input type="text" #txtbox>
+<br>
+<button type="button" (click)="clickMe(txtbox.value)">Click Me!!!</button>
+
+<!-- <img [src]="imagePath" alt=""> 
+<img src="{{imagePath}}" alt=""> -->
+<!-- Id: {{ employeeRecords[0].id }}
+Name: {{ employeeRecords[0].name }} -->
+Filter By: &nbsp;<input type="text" #filter>
+<br>
+<table *ngIf="employeeRecords && employeeRecords!==null">
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td>Salary</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of employeeRecords|filterPipe:'n'">
+      <td>{{e.id}}</td>
+      <td>{{e.name | lowercase}}</td>
+      <td>{{e.salary | currency:'INR'}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <p *ngFor="let i of [0,1,2,3,4]">
+  {{i}}
+</p> -->
